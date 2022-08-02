@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+MAINTAINER rajeshdg
+COPY target/docker-stunt-server-1.0.0.jar message-stunt-1.0.0.jar
+ENTRYPOINT ["java","-jar","/message-stunt-1.0.0.jar"]
